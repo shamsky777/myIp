@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myIp</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script -->
+    <script defer src="api.js"></script>
+    
+</head>
+<body>
+
+    <div class="container">
+        <dvi>
+            <button id="myButton" class="myButton">Show myIp</button>
+        </dvi>
+        <div id="myIpText" class="myIpText">
+            
+        </div>
+    </div>
+
+    <script type="application/javascript">
+        var IP;
+      
+        function getIP(json) {
+          IP = json.ip;
+        }
+      </script>
+      
+      <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP">
+      </script>
+</body>
+</html>
