@@ -32,6 +32,7 @@ body {
     width: 100px;
     height: 20px;
     border-radius: 15px;
+    margin-bottom: 10px;
     cursor: pointer;
     transition: ease all 0.5s;
 }
